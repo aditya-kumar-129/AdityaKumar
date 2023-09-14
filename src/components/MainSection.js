@@ -5,27 +5,10 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import homeMainIcon from '../assets/home-main.svg';
 import Tilt from 'react-parallax-tilt';
 import avatar from '../assets/avatar.svg';
-import {
-  GitHub as GitHubIcon,
-  Instagram as InstagramIcon,
-  LinkedIn as LinkedInIcon,
-  Email as EmailIcon,
-} from '@mui/icons-material';
-import { Link } from 'react-router-dom';
+import SocialMedia from './SocialMedia';
 
 const MainSection = () => {
   const lineStyle = { fontSize: '1.7rem', lineHeight: '1.8rem', margin: '1rem 1rem 1rem 0rem' };
-  const socialIconStyles = {
-    color: '#000',
-    width: '30px',
-    height: '30px',
-    cursor: 'pointer',
-    border: 'none',
-  };
-  const handleEmailClick = () => {
-    const email = 'adityakumar93340@gmail.com';
-    window.location.href = `mailto:${email}`;
-  };
   return (
     <Stack>
       <Stack
@@ -121,30 +104,14 @@ const MainSection = () => {
       {/* Bottom part of the Main Screen */}
       <Stack sx={{ alignItems: 'center', marginTop: '5rem' }}>
         <Typography variant="h3">FIND ME ON</Typography>
-        <Typography variant="h6" fontWeight={300} sx={{ marginTop: '0.5rem' }}>
+        <Typography
+          variant="h6"
+          fontWeight={300}
+          sx={{ marginTop: '0.5rem', marginBottom: '1rem' }}
+        >
           Feel free to connect with me
         </Typography>
-        <Stack
-          sx={{
-            flexDirection: 'row',
-            marginTop: '2rem',
-            width: '15rem',
-            justifyContent: 'space-between',
-          }}
-        >
-          <Link to="https://github.com/aditya-kumar-129/" target="_blank">
-            <GitHubIcon style={socialIconStyles} />
-          </Link>
-          <Link to="https://www.instagram.com/aditya_kumar_129/" target="_blank">
-            <InstagramIcon style={socialIconStyles} />
-          </Link>
-          <Link to="https://www.linkedin.com/in/aditya-kumar129/" target="_blank">
-            <LinkedInIcon style={socialIconStyles} />
-          </Link>
-          <Link to="#" onClick={handleEmailClick}>
-            <EmailIcon style={socialIconStyles} />
-          </Link>
-        </Stack>
+        <SocialMedia />
       </Stack>
     </Stack>
   );
