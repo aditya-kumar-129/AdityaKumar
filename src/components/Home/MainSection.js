@@ -2,15 +2,18 @@ import React from 'react';
 import { Stack, Typography } from '@mui/material';
 import Typewriter from 'typewriter-effect';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import homeMainIcon from '../assets/home-main.svg';
+import homeMainIcon from '../../assets/home-main.svg';
 import Tilt from 'react-parallax-tilt';
-import avatar from '../assets/avatar.svg';
+import avatar from '../../assets/avatar.svg';
 import SocialMedia from './SocialMedia';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 const MainSection = () => {
   const lineStyle = { fontSize: '1.7rem', lineHeight: '1.8rem', margin: '1rem 1rem 1rem 0rem' };
   return (
     <Stack>
+      <Navbar />
       <Stack
         sx={{
           flexDirection: 'row',
@@ -53,7 +56,6 @@ const MainSection = () => {
           />
         </Stack>
       </Stack>
-
       {/* Middle Part of the Main Screen */}
       <Stack sx={{ flexDirection: 'row', justifyContent: 'center', marginTop: '18rem' }}>
         <Stack>
@@ -100,7 +102,6 @@ const MainSection = () => {
           </Tilt>
         </Stack>
       </Stack>
-
       {/* Bottom part of the Main Screen */}
       <Stack sx={{ alignItems: 'center', marginTop: '5rem' }}>
         <Typography variant="h3">FIND ME ON</Typography>
@@ -113,6 +114,7 @@ const MainSection = () => {
         </Typography>
         <SocialMedia />
       </Stack>
+      <Footer />
     </Stack>
   );
 };

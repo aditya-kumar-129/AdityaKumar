@@ -16,10 +16,12 @@ const SocialMedia = () => {
     cursor: 'pointer',
     border: 'none',
   };
+
   const handleEmailClick = () => {
     const email = 'adityakumar93340@gmail.com';
     window.location.href = `mailto:${email}`;
   };
+  
   return (
     <Stack
       sx={{

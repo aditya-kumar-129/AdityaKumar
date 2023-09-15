@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Stack } from '@mui/material';
-import SocialMedia from './SocialMedia';
+import SocialMedia from './Home/SocialMedia';
 
 const Footer = () => {
   let date = new Date();
