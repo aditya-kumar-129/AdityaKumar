@@ -58,7 +58,7 @@ const TechSkills = () => {
         flexWrap: 'wrap',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        margin: '10vw',
+        margin: '5vw 10vw',
       }}
     >
       <Stack sx={techIcons}>
