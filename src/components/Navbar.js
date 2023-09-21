@@ -12,10 +12,10 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import {
   HomeOutlined as HomeIcon,
   PersonOutlineOutlined as PersonIcon,
-  AssignmentIndOutlined as AssignmentIcon,
   DescriptionOutlined as DescriptionIcon,
   WorkOutlineOutlined as WorkIcon,
 } from '@mui/icons-material';
+import { FaFolderOpen } from 'react-icons/fa';
 import PAGE_ROUTES from '../PAGEROUTES';
 
 const Navbar = () => {
@@ -144,10 +144,11 @@ const Navbar = () => {
                 }}
                 onClick={() => navigate(PAGE_ROUTES.PROJECT)}
               >
-                <AssignmentIcon
-                  sx={{
+                <FaFolderOpen
+                  style={{
                     marginRight: '0.3rem',
                     color: path === PAGE_ROUTES.PROJECT ? 'white' : 'inherit',
+                    fontSize: '24px',
                   }}
                 />
                 <Typography
