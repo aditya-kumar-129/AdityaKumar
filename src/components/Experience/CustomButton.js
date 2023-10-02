@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Typography, Button } from '@mui/material';
+import { Stack, Typography, Link } from '@mui/material';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 
 const CustomButton = (props) => {
@@ -10,15 +10,8 @@ const CustomButton = (props) => {
   };
 
   return (
-    <Stack>
-      <Button
-        onClick={props.redirectLink}
-        style={{
-          padding: '0',
-          justifyContent: 'flex-start',
-          width: 'auto',
-        }}
-      >
+    <Link href={props.redirectLink} target="_blank" rel="noopener noreferrer" underline="none">
+      <Stack sx={{ flexDirection: 'row', alignItems: 'center' }}>
         <Typography
           sx={{
             ...topHeadingStyle,
@@ -32,8 +25,8 @@ const CustomButton = (props) => {
         <Stack sx={{ marginLeft: '1rem' }}>
           <BsBoxArrowUpRight fontSize={'2rem'} color="black" strokeWidth={'1'} />
         </Stack>
-      </Button>
-    </Stack>
+      </Stack>
+    </Link>
   );
 };
 

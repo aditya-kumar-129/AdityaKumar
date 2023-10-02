@@ -11,8 +11,11 @@ import {
   studioCentralTechStacks,
   gfgBulletPoints,
   gfgTopicsCovered,
+  gfgArticleDescription,
 } from './ExperienceConstant';
 import CustomButton from './CustomButton';
+import GFGArticle from './GFGArticle';
+
 const Experience = () => {
   const stackStyle = {
     width: '75%',
@@ -47,22 +50,6 @@ const Experience = () => {
     justifyContent: 'flex-start',
   };
 
-  const redirectToStudioSleevesUpLinkedIn = () => {
-    window.open('https://www.linkedin.com/company/sleevesup/', '_blank');
-  };
-
-  const redirectToStudioProhire = () => {
-    window.open('https://prohire.central.sleevesup.com.au/', '_blank');
-  };
-
-  const redirectToStudioCentral = () => {
-    window.open('https://studio.central.sleevesup.com.au/', '_blank');
-  };
-
-  const redirectToGFGArticle = () => {
-    window.open('https://auth.geeksforgeeks.org/user/adityakumar129/articles', '_blank');
-  };
-
   return (
     <Stack>
       <Navbar />
@@ -78,7 +65,7 @@ const Experience = () => {
           >
             <Stack>
               <CustomButton
-                redirectLink={redirectToStudioSleevesUpLinkedIn}
+                redirectLink={'https://www.linkedin.com/company/sleevesup/'}
                 name={'Studio SleevesUp'}
               />
               <Typography sx={topHeadingStyle}>Software Engineer Intern</Typography>
@@ -89,7 +76,10 @@ const Experience = () => {
             {/* Start of Project 1  */}
             <Stack sx={experienceProjectStyle}>
               <Stack sx={{ margin: '2rem 3rem' }}>
-                <CustomButton redirectLink={redirectToStudioProhire} name={'Studio Prohire'} />
+                <CustomButton
+                  redirectLink={'https://prohire.central.sleevesup.com.au/'}
+                  name={'Studio Prohire'}
+                />
                 <List style={{ listStyle: 'none', paddingLeft: '0' }}>
                   {studioProhireBulletPoints.map((data, index) => {
                     return <CustomListItem bulletPoints={data} key={index} />;
@@ -110,7 +100,10 @@ const Experience = () => {
             {/* Start of Project 2  */}
             <Stack sx={experienceProjectStyle}>
               <Stack sx={{ margin: '2rem 3rem' }}>
-                <CustomButton redirectLink={redirectToStudioCentral} name={'Studio Central'} />
+                <CustomButton
+                  redirectLink={'https://studio.central.sleevesup.com.au/'}
+                  name={'Studio Central'}
+                />
                 <List style={{ listStyle: 'none', paddingLeft: '0' }}>
                   {studioCentralBulletPoints.map((data, index) => {
                     return <CustomListItem bulletPoints={data} key={index} />;
@@ -140,7 +133,10 @@ const Experience = () => {
             }}
           >
             <Stack>
-              <CustomButton redirectLink={redirectToGFGArticle} name={'Geeks For Geeks'} />
+              <CustomButton
+                redirectLink={'https://auth.geeksforgeeks.org/user/adityakumar129/articles'}
+                name={'Geeks For Geeks'}
+              />
               <Typography sx={topHeadingStyle}>Technical Content Writer & Editor</Typography>
             </Stack>
             <Typography sx={topHeadingStyle}>Mar 2023 - Aug 2023</Typography>
@@ -162,6 +158,14 @@ const Experience = () => {
                   })}
                 </Stack>
               </Stack>
+            </Stack>
+            <Typography sx={{ ...topHeadingStyle, marginLeft: '1rem' }}>
+              Some of the artiles that I have written are :
+            </Typography>
+            <Stack>
+              {gfgArticleDescription.map((data, index) => {
+                return <GFGArticle description={data.description} link={data.link} key={index} />;
+              })}
             </Stack>
           </Stack>
         </Stack>
