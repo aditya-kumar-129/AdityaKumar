@@ -17,7 +17,6 @@ const CustomButton = (props) => {
           padding: '0',
           justifyContent: 'flex-start',
           width: 'auto',
-          '&:hover': { backgroundColor: 'inherit' },
         }}
       >
         <Typography
