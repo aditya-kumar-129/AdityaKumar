@@ -26,21 +26,19 @@ const About = () => {
       <Navbar />
       <Stack sx={{ flexDirection: 'row', justifyContent: 'space-between', margin: '12rem' }}>
         <Stack>
-          <Stack sx={{ flexDirection: 'row', marginLeft: '15rem' }}>
-            <Typography sx={{ textAlign: 'center', fontWeight: 500, fontSize: '1.7rem' }}>
-              Know Who &nbsp;
-            </Typography>
+          <Stack sx={{ marginLeft: '10rem' }}>
             <Typography variant="h4" fontWeight="bold">
-              I'M
+              Know More About Me
             </Typography>
           </Stack>
           <Stack>
             <Typography sx={lineStyle}>
-              Hi Everyone, I am Aditya Kumar from Patna, Bihar.
+              Hi Everyone, I am Aditya Kumar from Patna Saheb, Bihar.
             </Typography>
             <Typography sx={lineStyle}>Skilled Full Stack Developer.</Typography>
             <Typography sx={lineStyle}>
-              Pursuing Bachelor in Information Science from Ramaiah Institute of Technology
+              Completed My Bachelor's degree in Information Science from Ramaiah Institute of
+              Technology.
             </Typography>
           </Stack>
           <Stack>

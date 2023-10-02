@@ -136,7 +136,7 @@ const Navbar = () => {
               </Button>
             </Stack>
 
-            <Stack sx={stackStyle}>
+            {/* <Stack sx={stackStyle}>
               <Button
                 sx={{
                   ...navbarButtonStyle,
@@ -160,7 +160,7 @@ const Navbar = () => {
                   Project
                 </Typography>
               </Button>
-            </Stack>
+            </Stack> */}
 
             <Stack sx={stackStyle}>
               <Button

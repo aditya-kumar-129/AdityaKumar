@@ -90,13 +90,6 @@ const TechSkills = () => {
       </Stack>
 
       <Stack sx={techIcons}>
-        <SiTypescript style={{ marginLeft: '1rem' }} />
-        <Typography variant="h6" sx={techSkillTextStyle}>
-          Type Script
-        </Typography>
-      </Stack>
-
-      <Stack sx={techIcons}>
         <SiReact />
         <Typography variant="h6" sx={techSkillTextStyle}>
           React
@@ -107,6 +100,13 @@ const TechSkills = () => {
         <SiRedux />
         <Typography variant="h6" sx={techSkillTextStyle}>
           Redux
+        </Typography>
+      </Stack>
+
+      <Stack sx={techIcons}>
+        <SiTypescript style={{ marginLeft: '1rem' }} />
+        <Typography variant="h6" sx={techSkillTextStyle}>
+          Type Script
         </Typography>
       </Stack>
 
