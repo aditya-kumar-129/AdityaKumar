@@ -18,7 +18,7 @@ const GFGArticle = (props) => {
 
   return (
     <Link href={props.link} target="_blank" rel="noopener noreferrer" underline="none">
-      <Stack sx={{ flexDirection: 'row', ...experienceProjectStyle }}>
+      <Stack sx={{ flexDirection: 'row', ...experienceProjectStyle, alignItems: 'center' }}>
         <Avatar
           alt="Geeks For Geeks ICON"
           src={laptopImage}
