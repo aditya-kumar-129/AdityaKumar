@@ -38,6 +38,8 @@ const Resume = () => {
 
       <Stack sx={{ alignItems: 'center' }}>
         <Button
+          href={resumeLink}
+          target="_blank"
           sx={{
             backgroundColor: '#be6adf',
             width: '21rem',
@@ -55,11 +57,7 @@ const Resume = () => {
 
       <Stack sx={{ marginTop: '2rem', alignItems: 'center' }} ref={pdfWrapper}>
         <Document file={{ url: resumeLink }} loading={<LinearProgress />}>
-          <Page
-            width={pdfPageWidth}
-            pageNumber={1}
-            renderTextLayer={false}
-          />
+          <Page width={pdfPageWidth} pageNumber={1} renderTextLayer={false} />
         </Document>
       </Stack>
       <Footer />

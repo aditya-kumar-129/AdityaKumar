@@ -20,17 +20,17 @@ const GFGArticle = (props) => {
     <Link href={props.link} target="_blank" rel="noopener noreferrer" underline="none">
       <Stack sx={{ flexDirection: 'row', ...experienceProjectStyle }}>
         <Avatar
-          alt="Remy Sharp"
+          alt="Geeks For Geeks ICON"
           src={laptopImage}
           sx={{
             borderRadius: '0',
             margin: '0',
             padding: '0',
-            width: '40%',
-            height: 'auto',
+            width: '9rem',
+            height: '9rem',
           }}
         />
-        <Stack sx={{ justifyContent: 'center' }}>
+        <Stack sx={{ justifyContent: 'center', marginLeft: '1rem' }}>
           <Typography variant="h5" color={'#000'}>
             {props.description}
           </Typography>
