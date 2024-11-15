@@ -68,7 +68,7 @@ const Experience = () => {
                 redirectLink={'https://www.linkedin.com/company/sleevesup/'}
                 name={'Studio SleevesUp'}
               />
-              <Typography sx={topHeadingStyle}>Software Engineer Intern</Typography>
+              <Typography sx={topHeadingStyle}>Software Engineer (FULL TIME)</Typography>
             </Stack>
             <Typography sx={topHeadingStyle}>Mar 2023 - Aug 2023</Typography>
           </Stack>
