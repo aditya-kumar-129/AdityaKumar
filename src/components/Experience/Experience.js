@@ -12,6 +12,8 @@ import {
   gfgBulletPoints,
   gfgTopicsCovered,
   gfgArticleDescription,
+  tallyGroupBulletPoints,
+  tallyGroupTechStacks,
 } from './ExperienceConstant';
 import CustomButton from './CustomButton';
 import GFGArticle from './GFGArticle';
@@ -54,6 +56,47 @@ const Experience = () => {
     <Stack>
       <Navbar />
       <Stack sx={{ alignItems: 'center', margin: '5rem 10rem' }}>
+        {/* Experience 1 */}
+        <Stack sx={{ ...stackStyle, marginBottom: '2rem' }}>
+          <Stack
+            sx={{
+              flexDirection: 'row',
+              padding: '1rem',
+              margin: '2rem 2rem 0rem 2rem',
+              justifyContent: 'space-between',
+            }}
+          >
+            <Stack>
+              <CustomButton
+                redirectLink={'https://www.linkedin.com/company/tally-group/'}
+                name={'Tally Group'}
+              />
+              <Typography sx={topHeadingStyle}>Software Developer (FULL TIME)</Typography>
+            </Stack>
+            <Typography sx={topHeadingStyle}>Sep 2023 - Jun 2025</Typography>
+          </Stack>
+          <Stack>
+            <Stack sx={experienceProjectStyle}>
+              <Stack sx={{ margin: '2rem 3rem' }}>
+                <List style={{ listStyle: 'none', paddingLeft: '0' }}>
+                  {tallyGroupBulletPoints.map((data, index) => {
+                    return <CustomListItem bulletPoints={data} key={index} />;
+                  })}
+                </List>
+                <Typography sx={{ ...topHeadingStyle, marginBottom: '2rem' }}>
+                  Tech Stack
+                </Typography>
+                <Stack sx={chipStyle}>
+                  {tallyGroupTechStacks.map((data, index) => {
+                    return <CustomChip name={data} key={index} />;
+                  })}
+                </Stack>
+              </Stack>
+            </Stack>
+          </Stack>
+        </Stack>
+
+        {/* Experience 2 */}
         <Stack sx={stackStyle}>
           <Stack
             sx={{
@@ -122,7 +165,7 @@ const Experience = () => {
           </Stack>
         </Stack>
 
-        {/* Experience 2 */}
+        {/* Experience 3 */}
         <Stack sx={{ ...stackStyle, marginTop: '2rem' }}>
           <Stack
             sx={{

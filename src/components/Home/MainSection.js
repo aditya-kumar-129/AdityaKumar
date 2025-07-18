@@ -1,4 +1,3 @@
-import React from 'react';
 import { Stack, Typography } from '@mui/material';
 import Typewriter from 'typewriter-effect';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -36,8 +35,8 @@ const MainSection = () => {
             <Typewriter
               options={{
                 strings: [
-                  'Full Stack Developer',
-                  'Currently Learning DotNet and AngularJS',
+                  'Software Developer',
+                  'MERN Stack Developer',
                   'Curious to discuss around System Design Concepts',
                 ],
                 autoStart: true,
