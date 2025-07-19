@@ -24,7 +24,7 @@ const About = () => {
   return (
     <Stack>
       <Navbar />
-      <Stack sx={{ flexDirection: 'row', justifyContent: 'space-between', margin: '12rem' }}>
+      <Stack sx={{ flexDirection: 'row', justifyContent: 'space-between', margin: '12rem', marginTop: '4rem' }}>
         <Stack>
           <Stack sx={{ marginLeft: '10rem' }}>
             <Typography variant="h4" fontWeight="bold">
