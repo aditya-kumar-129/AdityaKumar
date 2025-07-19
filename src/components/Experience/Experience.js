@@ -55,7 +55,7 @@ const Experience = () => {
   return (
     <Stack>
       <Navbar />
-      <Stack sx={{ alignItems: 'center', margin: '5rem 10rem' }}>
+      <Stack sx={{ alignItems: 'center', margin: '1rem', marginTop: '4rem' }}>
         {/* Experience 1 */}
         <Stack sx={{ ...stackStyle, marginBottom: '2rem' }}>
           <Stack
@@ -77,7 +77,7 @@ const Experience = () => {
           </Stack>
           <Stack>
             <Stack sx={experienceProjectStyle}>
-              <Stack sx={{ margin: '2rem 3rem' }}>
+              <Stack sx={{ margin: '0 2rem' }}>
                 <List style={{ listStyle: 'none', paddingLeft: '0' }}>
                   {tallyGroupBulletPoints.map((data, index) => {
                     return <CustomListItem bulletPoints={data} key={index} />;
