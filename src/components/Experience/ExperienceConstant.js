@@ -1,7 +1,8 @@
 export const tallyGroupBulletPoints = [
   'Developed and optimized a stored procedure that prevented over $500,000 in erroneous payments, delivering significant cost savings for the Government of Victoria.',
-  'Optimized a complex MySQL stored procedure, reducing execution time by over 65% by narrowing result scope and improving query efficiency.',
-  'Led and developed an automation testing platform using React and ASP.NET Web API, integrating cloud services like Azure Functions for version compatibility, optimizing tester workflows, and saving 5 developers’ bandwidth, reducing manual efforts.',
+  'Optimized a complex MySQL stored procedure, reducing execution time by over 65% by narrowing the result scope and improving query efficiency.',
+  'Managed and executed AEMO regulatory schema/database updates under tight timelines, minimizing downtime and ensuring seamless operations across critical systems.',
+  'Led and developed an automation testing platform using React and Java, integrating cloud services like AWS S3, AWS Lambda, optimizing tester workflows, and saving 5 developers’ bandwidth, reducing manual efforts.',
   'Worked closely with cross-functional teams to gather requirements, develop features, and conduct rigorous testing, ensuring the delivery of high-quality software solutions within deadlines.'
 ]
 
@@ -14,8 +15,8 @@ export const tallyGroupTechStacks = [
 ];
 
 export const studioProhireBulletPoints = [
-  'Developed image proctoring feature utilizing AWS services, including AWS Rekognition, in a serverless environment with AWS Lambda. Designed to automatically analyze uploaded images in an S3 bucket, the feature efficiently performs face matching, object detection (e.g., mobile phones), and headcount estimation.',
-  'Developed a comprehensive dashboard within the Examiner flow, consolidating all the data acquired during the examination process. The dashboard encompasses a range of advanced features, notably question shuffling, and precise calculation of marks segmented by sections and categories.',
+  'Developed image proctoring feature utilizing AWS services, including AWS Rekognition, in a serverless environment with AWS Lambda. Designed to analyze uploaded images in an S3 bucket automatically, the feature efficiently performs face matching, object detection (e.g., mobile phones), and headcount estimation.',
+  'Developed a comprehensive dashboard within the Examiner flow, consolidating all the data acquired during the examination process. The dashboard features a range of advanced capabilities, including question shuffling and precise mark calculation segmented by sections and categories.',
 ];
 
 export const studioProhireTechStacks = [
