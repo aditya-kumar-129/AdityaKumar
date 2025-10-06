@@ -24,8 +24,10 @@ import {
   SiPostman,
   SiPython,
   SiRedux,
+  SiRabbitmq,
+  SiApachekafka 
 } from 'react-icons/si';
-import { DiNodejs, DiBootstrap, DiJava } from 'react-icons/di';
+import { DiNodejs, DiBootstrap, DiJava, DiRedis } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 
 const TechSkills = () => {
@@ -240,6 +242,27 @@ const TechSkills = () => {
         <SiPostman style={{ marginLeft: '0.4rem' }} />
         <Typography variant="h6" sx={techSkillTextStyle}>
           Postman
+        </Typography>
+      </Stack>
+
+      <Stack sx={techIcons}>
+        <SiRabbitmq style={{ marginLeft: '0.4rem' }} />
+        <Typography variant="h6" sx={techSkillTextStyle}>
+          RabbitMQ
+        </Typography>
+      </Stack>
+
+      <Stack sx={techIcons}>
+        <SiApachekafka style={{ marginLeft: '0.4rem' }} />
+        <Typography variant="h6" sx={techSkillTextStyle}>
+          Apache Kafka
+        </Typography>
+      </Stack>
+
+      <Stack sx={techIcons}>
+        <DiRedis style={{ marginLeft: '0.4rem' }} />
+        <Typography variant="h6" sx={techSkillTextStyle}>
+          Redis
         </Typography>
       </Stack>
 
